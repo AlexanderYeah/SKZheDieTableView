@@ -18,6 +18,8 @@
 		11951FA720EB1D12009C1FC2 /* ZDTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11951FA620EB1D12009C1FC2 /* ZDTableViewUITests.m */; };
 		11951FB520EB1D3F009C1FC2 /* Spot.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11951FB420EB1D3F009C1FC2 /* Spot.plist */; };
 		11951FB820EB1DFD009C1FC2 /* ShowTb_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11951FB720EB1DFD009C1FC2 /* ShowTb_VC.m */; };
+		11951FBF20EB2A47009C1FC2 /* SecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11951FBD20EB2A47009C1FC2 /* SecondTableViewCell.m */; };
+		11951FC020EB2A47009C1FC2 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11951FBE20EB2A47009C1FC2 /* SecondTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		11951FB420EB1D3F009C1FC2 /* Spot.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Spot.plist; sourceTree = "<group>"; };
 		11951FB620EB1DFD009C1FC2 /* ShowTb_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowTb_VC.h; sourceTree = "<group>"; };
 		11951FB720EB1DFD009C1FC2 /* ShowTb_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowTb_VC.m; sourceTree = "<group>"; };
+		11951FBC20EB2A47009C1FC2 /* SecondTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondTableViewCell.h; sourceTree = "<group>"; };
+		11951FBD20EB2A47009C1FC2 /* SecondTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondTableViewCell.m; sourceTree = "<group>"; };
+		11951FBE20EB2A47009C1FC2 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,9 @@
 				11951F8320EB1D10009C1FC2 /* ViewController.m */,
 				11951FB620EB1DFD009C1FC2 /* ShowTb_VC.h */,
 				11951FB720EB1DFD009C1FC2 /* ShowTb_VC.m */,
+				11951FBC20EB2A47009C1FC2 /* SecondTableViewCell.h */,
+				11951FBD20EB2A47009C1FC2 /* SecondTableViewCell.m */,
+				11951FBE20EB2A47009C1FC2 /* SecondTableViewCell.xib */,
 				11951F8520EB1D10009C1FC2 /* Main.storyboard */,
 				11951F8B20EB1D12009C1FC2 /* Assets.xcassets */,
 				11951F8D20EB1D12009C1FC2 /* LaunchScreen.storyboard */,
@@ -248,6 +256,7 @@
 			files = (
 				11951F8F20EB1D12009C1FC2 /* LaunchScreen.storyboard in Resources */,
 				11951F8C20EB1D12009C1FC2 /* Assets.xcassets in Resources */,
+				11951FC020EB2A47009C1FC2 /* SecondTableViewCell.xib in Resources */,
 				11951FB520EB1D3F009C1FC2 /* Spot.plist in Resources */,
 				11951F8720EB1D10009C1FC2 /* Main.storyboard in Resources */,
 			);
@@ -277,6 +286,7 @@
 				11951F8420EB1D10009C1FC2 /* ViewController.m in Sources */,
 				11951FB820EB1DFD009C1FC2 /* ShowTb_VC.m in Sources */,
 				11951F8120EB1D10009C1FC2 /* AppDelegate.m in Sources */,
+				11951FBF20EB2A47009C1FC2 /* SecondTableViewCell.m in Sources */,
 				11951F9220EB1D12009C1FC2 /* main.m in Sources */,
 				11951F8A20EB1D10009C1FC2 /* ZDTableView.xcdatamodeld in Sources */,
 			);

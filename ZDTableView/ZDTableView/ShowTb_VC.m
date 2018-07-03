@@ -8,6 +8,8 @@
 
 #import "ShowTb_VC.h"
 
+#import "SecondTableViewCell.h"
+
 @interface ShowTb_VC ()
 // 存放菜单的数组
 @property (nonatomic , retain) NSMutableArray * itemArray ;
@@ -24,6 +26,10 @@
 	self.openItemArray = [[NSMutableArray alloc] init] ;
 	
 	[self loadLocalPlist];
+	
+	[self.tableView registerNib:[UINib nibWithNibName:@"SecondTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"SecondTB"];
+	
+	
 }
 
 - (void)loadLocalPlist
@@ -88,10 +94,20 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
+	
+    static NSString *SecondID = @"SecondTB";
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+	
+	SecondTableViewCell *cell2 = [tableView dequeueReusableCellWithIdentifier:SecondID];
+	
 	
     if (!cell) {
 		cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+	}
+	
+	if (!cell2){
+	
+		cell2 = [[SecondTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SecondID];
 	}
 	
     NSDictionary *dic = [self.itemArray objectAtIndex:[indexPath row]] ;
@@ -102,7 +118,10 @@
 		cell.selectionStyle = UITableViewCellSelectionStyleNone ;
 	}// Configure the cell.
 	else {
-		cell.selectionStyle = UITableViewCellSelectionStyleBlue ;
+		
+		cell2.contentLbl.text = [dic objectForKey:@"name"];
+		return cell2;
+		
 	}
 	cell.textLabel.text = [dic objectForKey:@"name"];
     
